@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#echo "enter your name "
+
+#read name #read keyword used to read a value
+
+#echo "your name is $name"
+
+transport=('car' 'train' 'bike' 'bus') #arrays in bash
+echo "${transport[@]}"  			   # '@' used to o/p all array values
+echo "${transport[2]}"
+
+unset transport[1]   # 'unset' deletes an element
+echo "${transport[@]}"
+
+transport[1]='trainride' #insert a new element 
+echo "${transport[@]}"
